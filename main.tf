@@ -9,8 +9,8 @@ terraform {
 
 provider "docker" {}
 
-resource "docker_image" "nginx" {
-  name = "nginx:latest"
+resource "docker_image" "nginx" {        
+                                            name = "nginx:latest"
 }
 
 resource "docker_container" "web" {
